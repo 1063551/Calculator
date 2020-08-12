@@ -1,0 +1,228 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(253, 253, 253);
+}
+
+* {
+    margin: 0 auto;
+    border: 0px;
+    background-color: rgb(253, 253, 253);
+}
+
+header {
+    width: 100%;
+}
+
+#Creator {
+    float:right;
+    margin: 15px;
+    margin-top: -50px;
+}
+
+#Calc {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #dedede;
+    height: 500px;
+    width: 320px;
+    margin-top: 60px;
+}
+
+
+#Screen {
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    height: 120px;
+    width: 270px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#TopScreen {
+    height: 60px;
+    width: 270px;
+    vertical-align: bottom;
+}
+
+#BottomScreen {
+    height: 60px;
+    width: 270px;
+    overflow: hidden;
+}
+
+#displayTextTop {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;   
+    height: 60px;
+}
+
+#displayTextBot {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: flex-end;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    overflow: hidden;
+    height: 60px;
+}
+
+#Buttons {
+    height: 310px;
+    margin-top: 10px;
+    width: 270px;
+    
+    border-collapse: separate;
+    border-spacing: 1.5px;
+
+    display: grid;
+    grid-gap: 0.2rem;
+    margin-top: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "clear back  divide  multiply"
+                         "seven eight nine    subtract"
+                         "four  five  six     add"
+                         "one   two   three   equals"   
+                         "zer   zer   decimal equals";
+}
+
+button {
+    border: 1px solid #cfcfcf;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    width:100%;
+}
+
+.button--clear {
+    grid-area: clear;
+}
+
+.button--clear:hover {
+    background-color: #C8D9EE;
+}
+
+.button--back {
+    grid-area: back;
+}
+
+.button--back:hover {
+    background-color: #C8D9EE;
+}
+
+img {
+    width: 1.6rem;
+    margin-top: 7px;
+}
+
+.button--division {
+    grid-area: divide;
+    font-size: 26px;
+}
+
+.button--division:hover, img:hover {
+    background-color: #C8D9EE;
+}
+
+.button--multiplication {
+    grid-area: multiply;
+}
+
+.button--multiplication:hover {
+    background-color: #C8D9EE;
+}
+
+.button--minus {
+    grid-area: subtract;
+}
+
+.button--minus:hover {
+    background-color: #C8D9EE;
+}
+
+.button--plus {
+    grid-area: add;
+}
+
+.button--plus:hover {
+    background-color: #C8D9EE;
+}
+
+.button--equal {
+    grid-area: equals;
+    background-color: rgba(88, 174, 255, 0.5);
+}
+
+.button--equal:hover {
+    background-color: #A9C7EE;
+}
+
+.button--dot {
+    grid-area: decimal;
+}
+
+.button--9 {
+    grid-area: nine;
+}
+
+.button--8 {
+    grid-area: eight;
+}
+
+.button--7 {
+    grid-area: seven;
+}
+
+.button--6 {
+    grid-area: six;
+}
+
+.button--5 {
+    grid-area: five;
+}
+
+.button--4 {
+    grid-area: four;
+}
+
+.button--3 {
+    grid-area: three;
+}
+
+.button--2 {
+    grid-area: two;
+}
+
+.button--1 {
+    grid-area: one;
+}
+
+.button--0 {
+    grid-area: zer;
+}
+
+.button--dot:hover, .button--9:hover, .button--8:hover, .button--7:hover, .button--6:hover, .button--5:hover, .button--4:hover, .button--3:hover,.button--2:hover, .button--1:hover, .button--0:hover {
+    background-color: #EAEAEA;
+}
+
+.button--clear, .button--back, .button--division, .button--multiplication , .button--minus, .button--plus, img{
+    background-color:  rgba(205, 221, 240, 0.8);
+}
+
+button:focus {
+    outline:0
+}
+
+button:active {
+    transform: translateY(1px);
+}
